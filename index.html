@@ -22,25 +22,25 @@
     <section id="moon">
       <div class="container">
         <h2><span>Fusce</span><br> ligula in diam</h2>
-        <div class="row">
+        <main class="row">
           <div class="col-12 col-md-6">
             <p>Donec dictum enim eget nunc sodales, ut cursus sapien tristique. Etiam bibendum lorem sed mi posuere, quis malesuada odio tincidunt.</p>
           </div>
-        </div>
-        <div class="row moon-properties">
-          <div class="col-12 col-md-6"><img class="icon" src="images/werewolf.svg" alt="Maps">
+        </main>
+        <div class="row">
+          <aside class="col-12 col-md-6"><img class="icon" src="images/werewolf.svg" alt="Maps">
             <h5>Lorem Ipsum</h5>
             <p>Fusce tincidunt ligula in diam elementum, id sodales urna posuere. Curabitur efficitur turpis quis nisi elementum placerat. Morbi varius tempor odio, id vehicula nunc aliquet ac.</p>
-          </div>
-          <div class="col-12 col-md-6"><img class="icon" src="images/rocket.svg" alt="Rocket Launch">
+          </aside>
+          <aside class="col-12 col-md-6"><img class="icon" src="images/rocket.svg" alt="Rocket Launch">
             <h5>Dolor Sit Amet</h5>
             <p>Donec dapibus auctor tellus, tincidunt consectetur nisl porta non. Sed vel ullamcorper neque. Sed eros sem, consectetur vitae nunc ut, accumsan ultricies tellus. Suspendisse tristique mi nec quam posuere aliquet. </p>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
     <!-- Text block-->
-    <section class="longread">
+    <section id="story">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6">
@@ -55,32 +55,30 @@
       </div>
     </section>
     <!-- Swticher-->
-    <section>
+    <section id="switcher">
       <div class="container-fluid">
         <div class="row">
-          <aside class="col-12 col-md-2 fullheight">
-            <div class="switcher row align-items-center"><a class="switcher__toggle col col-md-12 active" data-key="first"><img class="icon icon-mini" src="images/switcher/1.svg" alt="Questions">
-                <p>Questions?</p></a><a class="switcher__toggle col col-md-12" data-key="second"><img class="icon icon-mini" src="images/switcher/2.svg" alt="Send out">
-                <p>Send out</p></a><a class="switcher__toggle col col-md-12" data-key="third"><img class="icon icon-mini" src="images/switcher/3.svg" alt="Among mountains">
-                <p>Among the mountains</p></a><a class="switcher__toggle col col-md-12" data-key="fourth"><img class="icon icon-mini" src="images/switcher/4.svg" alt="Reflection">
+          <aside class="col-12 col-md-2">
+            <div class="row align-items-center"><a class="col col-md-12 active" data-key="first"><img class="icon icon-mini" src="images/switcher/1.svg" alt="Questions">
+                <p>Questions?</p></a><a class="col col-md-12" data-key="second"><img class="icon icon-mini" src="images/switcher/2.svg" alt="Send out">
+                <p>Send out</p></a><a class="col col-md-12" data-key="third"><img class="icon icon-mini" src="images/switcher/3.svg" alt="Among mountains">
+                <p>Among the mountains</p></a><a class="col col-md-12" data-key="fourth"><img class="icon icon-mini" src="images/switcher/4.svg" alt="Reflection">
                 <p>Reflection</p></a></div>
           </aside>
-          <div class="col-md-5 fullheight switcher__cover"></div>
-          <div class="col-md-5 fullheight switcher__content">
+          <figure class="fullheight col-md-5"></figure>
+          <main class="col-md-5">
             <div class="row fullheight align-items-center">
-              <div class="col-12">
-                <div class="panel">
-                  <h3 class="switcher__heading"></h3>
-                  <p class="switcher__text"></p>
-                </div>
-              </div>
+              <article class="col-12">
+                <h3>...</h3>
+                <p>Loading...</p>
+              </article>
             </div>
-          </div>
+          </main>
         </div>
       </div>
     </section>
     <!-- Features-->
-    <div class="features">
+    <section id="features">
       <div class="container">
         <div class="row">
           <div class="col-6 col-sm-4 col-md-3"><img class="icon icon-mini" src="images/features/1.svg" alt="Don't drink and drive">
@@ -109,7 +107,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

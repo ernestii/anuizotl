@@ -29,14 +29,14 @@
 
     // Render view
     function view({ cover, heading, text} ) {
-      $('.switcher__cover').css('background-image', `url(${cover})`)
-      $('.switcher__heading').text(heading);
-      $('.switcher__text').text(text);
+      $('#switcher figure').css('background-image', `url(${cover})`)
+      $('#switcher main h3').text(heading);
+      $('#switcher main p').text(text);
     }
 
-    $('.switcher__toggle').each(function() {
+    $('#switcher aside a').each(function() {
       $(this).hover(function() {
-        $('.switcher__toggle').removeClass('active');
+        $('#switcher aside a').removeClass('active');
         $(this).addClass('active');
 
         // Render new data

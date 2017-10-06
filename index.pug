@@ -19,21 +19,21 @@ html(lang="en")
     // Moon
     section#moon: .container
       h2 <span>Fusce</span><br> ligula in diam
-      .row: .col-12.col-md-6
+      main.row: .col-12.col-md-6
         p Donec dictum enim eget nunc sodales, ut cursus sapien tristique. Etiam bibendum lorem sed mi posuere, quis malesuada odio tincidunt.
       
-      .row.moon-properties
-        .col-12.col-md-6
+      .row
+        aside.col-12.col-md-6
           img.icon(src="images/werewolf.svg" alt="Maps")
           h5 Lorem Ipsum
           p Fusce tincidunt ligula in diam elementum, id sodales urna posuere. Curabitur efficitur turpis quis nisi elementum placerat. Morbi varius tempor odio, id vehicula nunc aliquet ac.
-        .col-12.col-md-6
+        aside.col-12.col-md-6
           img.icon(src="images/rocket.svg" alt="Rocket Launch")
           h5 Dolor Sit Amet
           p Donec dapibus auctor tellus, tincidunt consectetur nisl porta non. Sed vel ullamcorper neque. Sed eros sem, consectetur vitae nunc ut, accumsan ultricies tellus. Suspendisse tristique mi nec quam posuere aliquet. 
 
     // Text block
-    section.longread
+    section#story
       .container
         .row.justify-content-center
           .col-12.col-md-6
@@ -45,31 +45,31 @@ html(lang="en")
             p Suspendisse potenti. Aliquam euismod sapien in tellus luctus pellentesque et a turpis. Donec dignissim risus fermentum dolor scelerisque pulvinar. Suspendisse vel laoreet odio, dapibus porttitor libero.
 
     // Swticher
-    section
+    section#switcher
       .container-fluid: .row
-        aside.col-12.col-md-2.fullheight
-          .switcher.row.align-items-center
-            a(data-key="first").switcher__toggle.col.col-md-12.active
+        aside.col-12.col-md-2
+          .row.align-items-center
+            a(data-key="first").col.col-md-12.active
               img.icon.icon-mini(src="images/switcher/1.svg" alt="Questions")
               p Questions?
-            a(data-key="second").switcher__toggle.col.col-md-12
+            a(data-key="second").col.col-md-12
               img.icon.icon-mini(src="images/switcher/2.svg" alt="Send out")
               p Send out
-            a(data-key="third").switcher__toggle.col.col-md-12
+            a(data-key="third").col.col-md-12
               img.icon.icon-mini(src="images/switcher/3.svg" alt="Among mountains")
               p Among the mountains
-            a(data-key="fourth").switcher__toggle.col.col-md-12
+            a(data-key="fourth").col.col-md-12
               img.icon.icon-mini(src="images/switcher/4.svg" alt="Reflection")
               p Reflection
-        .col-md-5.fullheight.switcher__cover
-        .col-md-5.fullheight.switcher__content
+        figure.fullheight.col-md-5
+        main.col-md-5
           .row.fullheight.align-items-center
-            .col-12: .panel
-              h3.switcher__heading
-              p.switcher__text
+            article.col-12
+              h3 ...
+              p Loading...
     
     // Features
-    .features
+    section#features
       .container
         .row
           .col-6.col-sm-4.col-md-3

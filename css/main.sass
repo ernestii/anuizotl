@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nova+Square|Anonymous+Pro')
 
+// Typography Styles
 body
   font-family: 'Anonymous Pro'
-
-#__bs_notify__
-  display: none !important
-  opacity: 0
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Nova Square'
@@ -15,6 +12,7 @@ h1, h2, h3, h4, h5, h6
   span
     color: #fd1e00
 
+// Elements
 img.icon
   width: 64px
   margin-bottom: 20px
@@ -23,27 +21,45 @@ img.icon-mini
   width: 40px
   margin-bottom: 10px
 
+.logo
+  width: 106px
+  padding-bottom: 40px
+  
+.fullheight
+  min-height: 250px
+  @media screen and (min-width: 900px)
+    min-height: 100vh
+
+// Sections
 section
-  background: #000
+  background-color: #000
 
 #cover
   background-color: #000
   color: #fff
   padding-top: 120px
-
-  .logo
-    width: 106px
-    padding-bottom: 40px
-  
   h1
     margin-bottom: 20px
-
   p
     color: #666
     font-weight: 300
 
-.longread
-  background: #ffffff
+#moon
+  background-color: #000
+  background-image: url(../images/moon.jpg)
+  background-position: top center
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 250px 0 100px
+  margin-top: -40px
+  aside
+    margin-top: 50px
+    h2
+      font-size: 36px
+      margin-bottom: 20px
+
+#story
+  background-color: #fff
   padding: 140px 0
   h2
     margin-bottom: 20px
@@ -51,64 +67,43 @@ section
     font-size: 1.5em
     opacity: .4
 
-#moon
-  background-color: #0f0f0f
-  background-image: url(../images/moon.jpg)
-  background-position: top center
-  background-repeat: no-repeat
-  background-size: cover
-  padding: 250px 0 100px
-  margin-top: -40px
+#switcher
+  aside
+    @media screen and (min-width: 900px)
+      padding-top: 80px
+    padding-left: 10px
+    padding-right: 10px
+    a[data-key]
+      cursor: pointer
+      opacity: .3
+      display: block
+      margin: 30px 0
+      text-align: center
+      transition: all ease 0.25s
+      color: #fff !important
+      &.active
+        opacity: 1
+      &:hover
+        text-decoration: none
 
-.moon-properties
-  margin-top: 50px
+  figure
+    margin: 0
+    background-position: center center
+    background-size: cover
+    transition: all ease 0.5s
 
-  h2
-    font-size: 36px
-    margin-bottom: 20px
+  main
+    color: #fff
+    article
+      padding: 40px 0
+      @media screen and (min-width: 900px)
+        padding: 80px 40px
+      h3
+        color: #fd1e00
 
-.panel
-  padding: 40px 0
-  @media screen and (min-width: 900px)
-    padding: 80px 40px
-.switcher
-  @media screen and (min-width: 900px)
-    padding-top: 80px
-  padding-left: 10px
-  padding-right: 10px
-  .switcher__toggle
-    cursor: pointer
-    opacity: .3
-    display: block
-    margin: 30px 0
-    text-align: center
-    transition: all ease 0.25s
-    color: #fff !important
-    &.active
-      opacity: 1
-    &:hover
-      text-decoration: none
-.switcher__cover
-  background-position: center center
-  background-size: cover
-  transition: all ease 0.5s
 
-.switcher__content
-  color: #fff
-  .switcher__heading
-    color: #fd1e00
-
-.fullheight
-  min-height: 250px
-  @media screen and (min-width: 900px)
-    min-height: 100vh
-
-.shead
-  text-transform: uppercase
-  letter-spacing: 7px
-  text-align: center
-
-.features
+#features
+  background-color: #fff
   padding: 100px 0
   .col-6
     margin-top: 15px
