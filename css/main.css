@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nova+Square|Anonymous+Pro");
+
+/* Typographic styles */
 body {
   font-family: "Anonymous Pro"; }
 
@@ -10,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     color: #fd1e00; }
 
+/* Elements */
 img.icon {
   width: 64px;
   margin-bottom: 20px; }
@@ -28,6 +31,7 @@ img.icon-mini {
     .fullheight {
       min-height: 100vh; } }
 
+/* Sections */
 section {
   background-color: #000; }
 
